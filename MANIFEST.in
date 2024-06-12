@@ -1,0 +1,2 @@
+recursive-include auth_user_extrainfo/patches *
+recursive-include auth_user_extrainfo/templates *
