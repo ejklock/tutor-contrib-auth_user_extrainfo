@@ -13,7 +13,7 @@ class ExtraInfoForm(ModelForm):
     def __init__(self, *args, **kwargs):
         super(ExtraInfoForm, self).__init__(*args, **kwargs)
         logger.debug("Initializing ExtraInfoForm with fields: %s", self.fields)
-        self.fields['cpf'].required = False
+        self.fields['cpf'].optional = True
 
     class Meta:
         model = ExtraInfo
