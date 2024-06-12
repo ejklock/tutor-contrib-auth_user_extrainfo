@@ -29,5 +29,5 @@ class ExtraInfo(models.Model):
     def __str__(self):
         return f'{self.user} {self.cpf}'
     
-    def Meta():
+    class Meta:
       db_table = 'auth_user_extrainfo'
