@@ -1,1 +1,0 @@
-./manage.py lms makemigrations auth_user_extrainfo && ./manage.py lms migrate

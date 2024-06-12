@@ -143,7 +143,7 @@ hooks.Filters.ENV_TEMPLATE_TARGETS.add_items(
     # For example, ``auth_user_extrainfo/templates/auth_user_extrainfo/build``
     # will be rendered to ``$(tutor config printroot)/env/plugins/auth_user_extrainfo/build``.
     [
-        ("auth_user_extrainfo/build", "plugins"),
+        ("auth_user_extrainfo/templates", "plugins"),
         ("auth_user_extrainfo/apps", "plugins"),
     ],
 )

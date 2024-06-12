@@ -1,6 +1,7 @@
 
 import re
 
+from django import db
 from django.conf import settings
 from django.db import models
 from localflavor.br.models import BRCPFField
@@ -16,7 +17,7 @@ class ExtraInfo(models.Model):
     """
     user = models.OneToOneField(USER_MODEL, null=True,  related_name='user+', on_delete=models.CASCADE)
     
-    cpf = BRCPFField()
+    cpf = BRCPFField(unique=True, null=True)
     
     def clean(self):
         self.cpf = re.sub(r'[-.]', '', self.cpf)
@@ -27,3 +28,6 @@ class ExtraInfo(models.Model):
 
     def __str__(self):
         return f'{self.user} {self.cpf}'
+    
+    def Meta():
+      db_table = 'auth_user_extrainfo'
