@@ -1,0 +1,3 @@
+ADDL_INSTALLED_APPS: ["localflavor", "auth_user_extrainfo"]
+ENABLE_COMBINED_LOGIN_REGISTRATION: true
+REGISTRATION_EXTENSION_FORM: "auth_user_extrainfo.forms.ExtraInfoForm"
