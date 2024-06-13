@@ -1,1 +1,1 @@
-RUN curl -fsSL <https://github.com/ejklock/edx-platform/blob/ufmtemrede/quince/0001-feat-adding-custom_course_grade_report.patch> | git am
+RUN curl -fsSL https://github.com/ejklock/edx-platform/blob/ufmtemrede/quince/0001-feat-adding-custom_course_grade_report.patch | git am
