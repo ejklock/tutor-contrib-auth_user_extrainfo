@@ -1,1 +1,1 @@
-RUN curl -fsSL https://github.com/ejklock/edx-platform/commit/9127ffb7ac442b00b6a0574a997bfa9975a7ed86.patch | git am
+RUN curl -fsSL https://github.com/ejklock/edx-platform/commit/a06716e204365c07b0edc38affcfc3dc6b867d02.patch | git am
